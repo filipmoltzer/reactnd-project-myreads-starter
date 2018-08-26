@@ -4,6 +4,7 @@
 ### Install:
 **Step 1.**
 Clone/Download this project.
+
 **Step 2.**
 Cd into reactnd-project-myreads-starter folder in Terminal.
 run "npm install"
