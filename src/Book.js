@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 
 class Book extends Component {
   render () {
+    let displayedThumbnail = this.props.imageLinks ?
+    this.props.imageLinks.thumbnail :
+    '';
+
     return (
     <div className="book">
       <div className="book-top">
-        <div className="book-cover" style={{ width: 128, height: 193, backgroundImage: `url("${this.props.book.imageLinks.thumbnail}"` }}></div>
+        <div className="book-cover" style={{ width: 128,
+           height: 193, backgroundImage: `url("${
+             displayedThumbnail}"` }}></div>
         <div className="book-shelf-changer">
           <select
           onChange={(event) => this.props.moveShelf(
